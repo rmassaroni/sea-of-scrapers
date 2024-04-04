@@ -7,6 +7,7 @@ async function main() {
     });
 
     const page = await browser.newPage();
+    await page.goto('https://www.seaofthieves.com/leaderboards/GoldHoarders/global');
 
     await page.waitForTimeout(1000);
     await browser.close();
